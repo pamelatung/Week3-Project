@@ -1,0 +1,629 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.clearfix {
+	clear:both;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
+	font-weight: 200;
+	background: url(client1-hackeryou/3-Image_assets/bg-forplacement.jpg);
+}
+
+a {
+	color:#26A6C9;
+	text-decoration: none;
+}
+	a:hover {
+		color:#0888c2;
+	}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	position:relative;
+}
+
+/*
+=============
+HEADER
+=============
+*/
+
+header {
+	text-align: left;
+}
+
+header .hylogo a {
+	width: 115px;
+	height: 100px;
+	float: left;
+	background: url(client1-hackeryou/3-Image_assets/logo-bg.png);
+}
+
+header .login {
+	display:inline-block;
+	position: absolute;
+	top:0;
+	right: 30%;
+	padding:20px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #999;
+}
+
+/*  NAVIGATION LIST  */
+
+header ul.nav {
+	display: inline-block;
+	margin:70px 0 70px 25px;
+	padding:0;
+	text-align: center;
+}
+
+ul.nav li {
+	display:inline;
+	padding:10px;
+	list-style-type: none;
+}
+
+ul.nav a {
+	font-size: 16px;
+	text-decoration: none;
+	color:#000;
+}
+ul.nav a:hover {
+	color:#d12026;
+}
+
+/* BIG INTRODUCTION TEXT */
+
+.hero {
+	width: 100%;
+	margin-top:0;
+}
+
+.hero h1 {
+	font-size: 48px;
+	font-weight: 200;
+	color:#000;
+	padding:0;
+	margin-top:0;
+}
+.hero span {
+	color:#d12026;
+}
+
+/*
+================
+CONTENT
+================
+*/
+
+.content {
+	width: 70%;
+	padding:50px;
+	float: left;
+	background: #FFF;
+}
+
+/*  "Hacker: a person who creates..." */
+.content h4 {
+	font-size: 24px;
+	font-weight: 200;
+}
+
+/* Holds content subtitle and news */
+.container {
+	width: 80%;
+}
+
+.block {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+.third {
+	width: 33%;
+	padding-right:30px;
+	font-size: 13px;
+}
+.third h4 {
+	padding: 0;
+	margin: 0;
+}
+
+input.email,
+input.submit {
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding:5px;
+	margin-bottom:10px;
+}
+input.email {
+	width: 100%;
+	position: relative;
+	background: #D1D3D4;
+	border:1px solid #D1D3D4;
+	color:#AAABAB;
+}
+input.email:focus {
+	border: 1px solid #000;
+	color:#000;
+	outline:0;   /* gets rid of the default glow */
+}
+input.submit {
+	background: #26A6C9;
+	color:#FFF;
+	border:none;
+}
+
+/*
+=====================
+SIDEBAR
+=====================
+*/
+
+.sidebar {
+	position: relative;
+	width: 30%;
+	float: left;
+	background-color: rgba(0,0,0,0.8);
+	color:#fff;
+}
+.sidebarImg img {
+	width: 100%;
+}
+
+.apply {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding:20px;
+	background: #d12026;
+	font-size: 20px;
+	color:#FFF;
+	z-index: 10;
+}
+
+.sidebar header {
+	width: 100%;
+}
+
+.sidebar h1 {
+	width: 75%;
+	padding: 20px 0 0 20px;
+	margin: 0;
+	float: left;
+	font-size: 26px;
+	font-weight: 200;
+	color:#FFF;
+}
+.sidebar h2 {
+	float: left;
+	font-size: 15px;
+	font-weight: 200;
+	padding: 10px 0 15px 20px;
+	margin: 0;
+	color: rgba(255,255,255,0.5);
+	letter-spacing:1px;
+	text-transform: uppercase;
+}
+
+.sidebar p {
+	padding-top:15px;
+	margin: 10px 20px;
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 1.5;
+}
+
+p.description {
+	border-top:5px solid rgba(255,255,255,0.2);
+}
+
+.sidebar .date {
+	width: 25%;
+	float: left;
+	padding-top: 15px;
+	margin: 0;
+	text-align: center;
+}
+
+.sidebar header p {
+	padding: 0;
+	margin: 0;
+	line-height:0.92;
+	border:none;
+}
+
+/* P SPANS */
+
+span.asterisk {
+	color:#26A6C9;
+}
+span.tiny {
+	font-size: 10px;
+	color:rgba(255,255,255,0.6);
+	text-transform: uppercase;
+}
+span.month {
+	font-size: 18px;
+}
+span.day {
+	font-size: 26px;
+	line-height: 0.95;
+}
+
+/* INSTRUCTOR SECTION */
+
+.instructor {
+	width: 88%;
+	margin:0 6%;
+	border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+.instructor img,
+.profile {
+	float: left;
+}
+.instructor img {
+	width: 25%;
+}
+.profile {
+	width: 75%;
+	padding:10px 0 0 15px;
+}
+
+.instructor h3 {
+	font-size: 18px;
+	font-weight: 200;
+	padding: 0;
+	margin: 0;
+}
+
+.instructor p {
+	margin:0;
+	padding:10px 0;
+}
+
+.instructor .asterisk {
+	font-size: 24px;
+	padding:0 10px 0 0;
+	float: left;
+}
+
+/* QUESTIONS STYLES */
+
+.questions {
+	line-height: 2;
+	position: relative;
+	padding-bottom:30px;
+}
+.questions a {
+	color:#FFF;
+	background: #26A6C9;
+	margin:20px 0 0 20px;
+	padding:6px 8px;
+	line-height: 30px;
+}
+	.questions a:hover {
+		background: #0888c2;
+	}
+
+.questions img {
+	position: absolute;
+	top: 20%;
+	right:2%;
+}
+
+/*
+=====================
+FOOTER
+=====================
+*/
+
+footer {
+	margin-bottom:200px;
+}
+
+footer.content {
+	margin-top:5px;
+	padding:0;
+	background: rgba(0,0,0,0.8);
+}
+footer ul {
+	width: 30%;
+	padding:10px 0 40px 50px;
+	font-size: 0;
+	float: left;
+}
+footer ul li {
+	display:inline-block;
+	overflow:hidden;
+	white-space: nowrap;
+}
+
+.footlinks {
+	padding:10px 40px 40px 20px;
+}
+
+/* small grey footer text and links */
+footer p,
+.footlinks a   {
+	font-size: 11px;
+	color:rgba(255,255,255,0.35);
+	font-weight: 100;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+	.footlinks a:hover {
+		color:#FFF;
+	}
+
+/* red dashes between footer links */
+span.red {
+	color:#d12026;
+	font-size: 11px;
+	padding:0 5px;
+}
+
+/*
+======================
+RESPONSIVE
+======================
+*/
+
+@media (max-width: 1150px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media (max-width: 990px) {
+
+	/* smaller font size, step 1 */
+	.hero h1 {
+		font-size: 36px;
+		font-weight: 200;
+		color:#000;
+		padding-top:50px;
+	}
+
+	header ul.nav {
+		padding: 0;
+		margin: 70px 0 0 30px;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.content {
+		padding:30px;
+	}
+	
+	/* news headings change to 50% width */
+	.third {
+		width: 50%;
+		padding-bottom:35px;
+	}
+	.third:nth-of-type(3) {
+		width: 100%;
+	}
+	input.email {
+		display: block;
+		width: 60%;
+	}
+	.questions img {
+		display:none;
+	}
+
+}
+
+@media (max-width:900px) {
+
+	/* smaller font size, step 2 */
+	.hero h1 {
+		font-size: 28px;
+	}
+	/* smaller subtitle size, step 1 */
+	.content h4 {
+		font-size: 20px;
+	}
+	/* news items change to 100% width */
+	.third {
+		width: 100%;
+		padding-bottom:35px;
+	}
+	input.email {
+		display:block;
+		width: 60%;
+	}
+}
+
+@media (max-width: 767px) {
+
+	/* wrapper covers full width of screen */
+	.wrapper {
+		width: 100%;
+	}
+	/* login button repositioning */
+	header .login {
+		display:inline-block;
+		position: absolute;
+		top:0;
+		right: 0;
+		padding:20px;
+		font-size: 20px;
+		text-decoration: none;
+		color: #999;
+	}
+	header ul.nav {
+		padding: 0;
+		margin: 70px 0 0 80px;
+		text-align:left;
+	}
+
+	/* content covers full width of screen */
+	.content {
+		width: 100%;
+	}
+	/* news items change to 33% width */
+	.third {
+		width: 33%;
+	}
+	.third:nth-of-type(3) {
+		width: 33%;
+	}
+	input.email {
+		width: 100%;
+	}
+	/* sidebar covers full width of screen, follows contents section */
+	.sidebar {
+		width: 100%;
+		padding-bottom:30px;
+	}
+	.sidebar header {
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+	.sidebar h1,
+	.sidebar h2 {
+		padding:0 0 0 40px;
+	}
+	/* larger sidebar headings */
+	.sidebar h1 {
+		font-size: 30px;
+	}
+	.sidebar h2 {
+		font-size: 20px;
+	}
+	.sidebar p {
+		padding: 25px 20px;
+		margin-top:10px;
+	}
+	span.tiny {
+		font-size: 14px;
+		color:rgba(255,255,255,0.6);
+		text-transform: uppercase;
+	}
+	span.month {
+		font-size: 24px;
+	}
+	span.day {
+		font-size: 36px;
+		line-height: 0.95;
+	}
+	.instructor .tiny {
+		font-size: 11px;
+	}
+	.questions,
+	.questions h1 {
+		width: 100%;
+		padding: 0 20px 10px 20px;
+		margin: 0;
+	}
+}
+
+@media (max-width: 600px) {
+
+	/* header re-sizing */
+	header {
+		width: 100%;
+		height: 175px;
+	}
+	/* small hackeryou logo */
+	header .hylogo a {
+		width: 150px;
+		height: 42px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		background: url(client1-hackeryou/3-Image_assets/hackerYou-logomark-mobile.jpg);
+		background-size: 150px 42px;
+		background-repeat:no-repeat;
+	}
+	/* navigation restyling */
+	header ul.nav {
+		margin:0;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+	}
+	header ul.nav li {
+		display:block;
+		width: 100%;
+		padding-left: 30px;
+		border-bottom: 1px solid #000;
+		float: left;
+	}
+	header ul.nav li:first-child {
+		border-top: 1px solid #000;
+	}
+	/* news items change to 100% width */
+	.third {
+		width: 100%;
+		padding-bottom:35px;
+	}
+	.third:nth-of-type(3) {
+		width: 100%;
+	}
+	input.email {
+		display:block;
+		width: 60%;
+	}
+	.sidebar header {
+		height: 115px;
+	}
+	.sidebar p {
+		margin-top:70px;
+	}
+}
+
+@media (max-width:523px) {
+	.sidebar p {
+		margin-top:70px;
+	}
+}
+
+
+@media (max-width: 480px) {
+	.sidebar {
+		width: 100%;
+		padding-bottom:30px;
+	}
+	.sidebar h1,
+	.sidebar h2 {
+		padding:10px 0 15px 40px;
+	}
+	.sidebar p {
+		padding-top: 25px;
+	}
+	.questions,
+	.questions h1 {
+		padding: 0 20px 10px 20px;
+		margin: 0;
+	}
+}
+
+
